@@ -3,7 +3,7 @@
 # Check if the number of arguments is exactly 2
 if [ "$#" -ne 2 ]; then
     echo "Usage: $0 <difficulty> <problem_id>"
-    echo "<difficulty> := easy | normal | hard"
+    echo "<difficulty> := easy | medium | hard"
     echo "<problem_id> := <positive integer>"
     exit 1
 fi
@@ -13,7 +13,7 @@ difficulty=$1
 problem_id=$2
 
 # Check if difficulty is valid
-if [[ "$difficulty" != "easy" && "$difficulty" != "normal" && "$difficulty" != "hard" ]]; then
+if [[ "$difficulty" != "easy" && "$difficulty" != "medium" && "$difficulty" != "hard" ]]; then
     echo "Error: Difficulty must be 'easy', 'normal', or 'hard'."
     exit 1
 fi

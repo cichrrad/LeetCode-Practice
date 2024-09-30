@@ -42,4 +42,3 @@ if [ ! -f "solution.cpp" ]; then
 fi
 
 echo "Created directory structure for $difficulty/$problem_id and solution.cpp file."
-
